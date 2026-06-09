@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, Links } from "react-router-dom";
-
+import looogo from "../assets/looogo.png"
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="navbar">
       {/* Logo */}
       <div className="logo">
-        <img src="..\src\assets\looogo.png" alt="logo" />
+        <img src={looogo} alt="logo" />
       </div>
 
      
@@ -58,7 +58,7 @@ export default function Navbar() {
         <Link to="/contact" >Contact Us</Link>
 
       </ul>
-|
+
       {/* Right Side */}
       <div className="nav-icons">
         <span>🛒 Cart</span>
